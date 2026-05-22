@@ -401,7 +401,6 @@ const RegisterForm: React.FC = () => {
             </FormLabel>
 
             <HStack spacing={4}>
-              {/* Choose File Button */}
               <Button
                 as="label"
                 htmlFor="fileUpload"
@@ -414,7 +413,6 @@ const RegisterForm: React.FC = () => {
                 Choose File
               </Button>
 
-              {/* Hidden Input */}
               <Input
                 id="fileUpload"
                 type="file"
@@ -422,7 +420,6 @@ const RegisterForm: React.FC = () => {
                 onChange={handleFileChange}
               />
 
-              {/* File Name */}
               <Text color="gray.500">
                 {formData.file ? formData.file.name : "No file chosen"}
               </Text>
